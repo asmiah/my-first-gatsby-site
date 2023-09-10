@@ -1,6 +1,7 @@
 import { Link } from 'gatsby';
 import * as React from 'react'
 import Layout from '../components/layout';
+import Seo from '../components/seo';
 
 const AboutPage = () => {
     return(
@@ -10,11 +11,6 @@ const AboutPage = () => {
     )
 }
 
-export const Head = () => (
-    <>
-        <title>About Me</title>
-        <meta name='description' content='This page is about the company: miahtech'/>
-    </>
-)
+export const Head = () => <Seo title="About" />
 
 export default AboutPage;
